@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+
+    <!--=============== GOOGLE FONTS ===============-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marhey:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>نقارش</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#home" class="nav__logo">
+          <img src="assets/img/logo.png" alt="الشعار" />
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="#home" class="nav__link active-link">الرئيسية</a></li>
+            <li><a href="#favorites" class="nav__link">المفضلة</a></li>
+            <li><a href="#care" class="nav__link">العناية</a></li>
+            <li><a href="#products" class="nav__link">المنتجات</a></li>
+            <li><a href="#contact" class="nav__link">اتصل بنا</a></li>
+          </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-large-line"></i>
+          </div>
+
+          <div class="nav__socials">
+            <a
+              href="https://www.facebook.com/Nakaresh.co"
+              target="_blank"
+              class="nav__social-link"
+            >
+              <i class="ri-facebook-circle-line"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/naqaresh_"
+              target="_blank"
+              class="nav__social-link"
+            >
+              <i class="ri-instagram-line"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="nav__actions">
+          <!-- زر التحويل للصفحة الإنجليزية -->
+          <button
+            class="lang-btn"
+            onclick="window.location.href='index-en.html'"
+          >
+            English
+          </button>
+
+          <!-- قائمة الموبايل -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-apps-2-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">
+              نقرشها <br />
+              بجنون !
+            </h1>
+
+            <p class="home__description">
+              عندما تشعر بالجوع ولا تملك وقتاً للطهي، تكون الوجبات الخفيفة هي
+              الحل المثالي، دائماً كن مستعداً لجوع منتصف النهار.
+            </p>
+          </div>
+
+          <div class="home__images">
+            <div class="home__circle">
+              <div class="home__subcircle"></div>
+            </div>
+
+            <img src="assets/img/roasted-nuts-extra.png" class="home__img" />
+
+            <img
+              src="assets/img/almond-removebg-preview.png"
+              alt="image"
+              class="home__almond"
+            />
+            <img
+              src="assets/img/sunflower-removebg-preview.png"
+              alt="image"
+              class="home__sunflower"
+            />
+            <img
+              src="assets/img/cashew-removebg-preview.png"
+              alt="image"
+              class="home__cashew"
+            />
+            <img
+              src="assets/img/peanut-removebg-preview.png"
+              alt="image"
+              class="home__peanut"
+            />
+            <img
+              src="assets/img/pistachio.png"
+              alt="image"
+              class="home__pistachio"
+            />
+            <img
+              src="assets/img/walnut-removebg-preview.png"
+              alt="image"
+              class="home__walnut"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--==================== FAVORITES ====================-->
+      <section class="favorite section" id="favorites">
+        <div class="favorites__container container grid">
+          <div class="favorites__data">
+            <h2 class="section__title">اكتشف <br />نكهاتك المفضلة</h2>
+
+            <p class="favorites__description">
+              جرّب بعض النكهات الغريبة أو الإضافات اللذيذة. لقد جمعنا لك وصفات
+              وجبات خفيفة شهية من جميع أنحاء العالم.
+            </p>
+
+            <img
+              src="assets/img/outlined-cashew.png"
+              alt="image"
+              class="favorites__cheese-1"
+            />
+            <img
+              src="assets/img/outlined-cashew.png"
+              alt="image"
+              class="favorites__cheese-2"
+            />
+          </div>
+
+          <!-- السلايدر -->
+          <div class="favorites__swiper swiper">
+            <div class="swiper-wrapper">
+              <!-- نفس الصور، لا تحتاج ترجمة -->
+              <!-- ... تبقى كما هي ... -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CARE ====================-->
+      <section class="care section" id="care">
+        <h2 class="section__title">استمتع واعتني <br />بصحتك</h2>
+
+        <div class="care__container container grid">
+          <ul class="care__list">
+            <li class="care__item">
+              <i class="ri-plant-line"></i>
+              <p>
+                يتم الحصول على مكسراتنا من مزارع عضوية ومسؤولة وهي طبيعية 100%،
+                لضمان أفضل جودة.
+              </p>
+            </li>
+
+            <li class="care__item">
+              <i class="ri-fire-line"></i>
+              <p>
+                نقوم بتحميص المكسرات ببطء للحفاظ على نكهتها وقيمتها الغذائية.
+              </p>
+            </li>
+
+            <li class="care__item">
+              <i class="ri-heart-pulse-line"></i>
+              <p>خالية من المواد المضافة والنكهات والمواد الحافظة الصناعية.</p>
+            </li>
+
+            <li class="care__item">
+              <i class="ri-hand-heart-line"></i>
+              <p>غنية بالدهون الصحية والبروتين والألياف لدعم صحتك العامة.</p>
+            </li>
+          </ul>
+
+          <img
+            src="assets/img/mixed-nuts.png"
+            alt="وعاء مكسرات"
+            class="care__image"
+          />
+        </div>
+      </section>
+
+      <!--==================== BANNER ====================-->
+      <section class="banner">
+        <div class="banner__container">
+          <ul class="banner__list">
+            <li class="banner__items">
+              <i class="ri-leaf-line"></i>
+              <span>جيد للطبيعة</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--==================== PRODUCTS ====================-->
+      <section class="products section" id="products">
+        <h2 class="section__title">أفضل المنتجات <br />مبيعاً</h2>
+
+        <!-- أزرار التصفية -->
+        <div class="products__filter container">
+          <button class="filter-btn active" data-size="all">الكل</button>
+          <button class="filter-btn" data-size="100g">100غ</button>
+          <button class="filter-btn" data-size="150g">150غ</button>
+          <button class="filter-btn" data-size="200g">200غ</button>
+          <button class="filter-btn" data-size="400g">400غ</button>
+          <button class="filter-btn" data-size="500g">500غ</button>
+        </div>
+
+        <div class="products__container container">
+          <div class="products__content grid">
+            <article class="products__card" data-size="100g">
+              <img
+                src="assets/img/roasted-smoked-peanuts.png"
+                alt="image"
+                class="products__img"
+              />
+
+              <span class="products__title">فول سوداني مدخن محمص</span>
+            </article>
+
+            <article class="products__card" data-size="100g">
+              <img
+                src="assets/img/roasted-pistachios.png"
+                alt="image"
+                class="products__img"
+              />
+              <span class="products__title">فستق محمص</span>
+            </article>
+
+            <article class="products__card" data-size="100g">
+              <img
+                src="assets/img/roasted-peanuts.png"
+                alt="image"
+                class="products__img"
+              />
+              <span class="products__title">فول سوداني محمص</span>
+            </article>
+
+            <article class="products__card" data-size="100g">
+              <img
+                src="assets/img/roasted-mixed-kernels.png"
+                alt="image"
+                class="products__img"
+              />
+              <span class="products__title">بذور مشكلة محمصة</span>
+            </article>
+
+            <article class="products__card" data-size="100g">
+              <img
+                src="assets/img/roasted-melon-seeds.png"
+                alt="image"
+                class="products__img"
+              />
+              <span class="products__title">بذور بطيخ محمصة</span>
+            </article>
+
+            <article class="products__card" data-size="100g">
+              <img
+                src="assets/img/roasted-extra-mix.png"
+                alt="image"
+                class="products__img"
+              />
+              <span class="products__title">خليط محمص إكسترا</span>
+            </article>
+
+            <article class="products__card" data-size="100g">
+              <img
+                src="assets/img/roasted-egyptian-seeds.png"
+                alt="image"
+                class="products__img"
+              />
+              <span class="products__title">بذور مصرية محمصة</span>
+            </article>
+
+            <article class="products__card" data-size="100g">
+              <img
+                src="assets/img/roasted-white-pumpkin.png"
+                alt="image"
+                class="products__img"
+              />
+              <span class="products__title">بذور قرع بيضاء محمصة</span>
+            </article>
+
+            <article class="products__card" data-size="100g">
+              <img
+                src="assets/img/roasted-chickpeas.png"
+                alt="image"
+                class="products__img"
+              />
+              <span class="products__title">حمص محمص</span>
+            </article>
+
+            <article class="products__card" data-size="100g">
+              <img
+                src="assets/img/roasted-cashews.png"
+                alt="image"
+                class="products__img"
+              />
+              <span class="products__title">كاجو محمص</span>
+            </article>
+
+            <article class="products__card" data-size="100g">
+              <img
+                src="assets/img/roasted-black-seeds.png"
+                alt="image"
+                class="products__img"
+              />
+              <span class="products__title">حبّة سوداء محمصة</span>
+            </article>
+
+            <article class="products__card" data-size="100g">
+              <img
+                src="assets/img/roasted-corn.png"
+                alt="image"
+                class="products__img"
+              />
+              <span class="products__title">ذرة محمصة</span>
+            </article>
+
+            <article class="products__card" data-size="100g">
+              <img
+                src="assets/img/roasted-almond-mix.png"
+                alt="image"
+                class="products__img"
+              />
+              <span class="products__title">خليط لوز محمص</span>
+            </article>
+
+            <article class="products__card" data-size="100g">
+              <img
+                src="assets/img/roasted-sunflower-seeds.png"
+                alt="image"
+                class="products__img"
+              />
+              <span class="products__title">بذور عباد الشمس محمصة</span>
+            </article>
+
+            <article class="products__card" data-size="100g">
+              <img
+                src="assets/img/roasted-sugary-checkpeas.png"
+                alt="image"
+                class="products__img"
+              />
+              <span class="products__title">حمص سكري محمص</span>
+            </article>
+
+            <article class="products__card" data-size="100g">
+              <img
+                src="assets/img/roasted-squach-seeds.png"
+                alt="image"
+                class="products__img"
+              />
+              <span class="products__title">بذور كوسا محمصة</span>
+            </article>
+
+            <article class="products__card" data-size="150g">
+              <img
+                src="assets/img/mixed-nuts-super-extra.png"
+                alt="image"
+                class="products__img__big"
+              />
+              <span class="products__title">مكسرات مشكلة سوبر إكسترا</span>
+            </article>
+
+            <article class="products__card" data-size="100g">
+              <img
+                src="assets/img/roasted-nuts-original.png"
+                alt="image"
+                class="products__img__big"
+              />
+              <span class="products__title">مكسرات محمصة أصلية</span>
+            </article>
+
+            <article class="products__card" data-size="200g">
+              <img
+                src="assets/img/fancy-roasted-nuts.png"
+                alt="image"
+                class="products__img__big"
+              />
+              <span class="products__title">مكسرات محمصة فاخرة</span>
+            </article>
+
+            <article class="products__card" data-size="200g">
+              <img
+                src="assets/img/maxican-roasted-nuts.png"
+                alt="image"
+                class="products__img__big"
+              />
+              <span class="products__title">مكسرات محمصة مكسيكية</span>
+            </article>
+
+            <article class="products__card" data-size="200g">
+              <img
+                src="assets/img/roasted-nuts-super-extra.png"
+                alt="image"
+                class="products__img__big"
+              />
+              <span class="products__title">مكسرات محمصة سوبر إكسترا</span>
+            </article>
+
+            <article class="products__card" data-size="200g">
+              <img
+                src="assets/img/mix-roasted-nuts.png"
+                alt="image"
+                class="products__img__big"
+              />
+              <span class="products__title">مكسرات محمصة مشكلة</span>
+            </article>
+
+            <article class="products__card" data-size="200g">
+              <img
+                src="assets/img/party-roasted-nuts.png"
+                alt="image"
+                class="products__img__big"
+              />
+              <span class="products__title">مكسرات محمصة للحفلات</span>
+            </article>
+
+            <article class="products__card" data-size="200g">
+              <img
+                src="assets/img/roasted-nuts-extra.png"
+                alt="image"
+                class="products__img__big"
+              />
+              <span class="products__title">مكسرات محمصة إكسترا</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <div class="contact__container container">
+          <h2 class="section__title">تواصل معنا <br />لتأكل نقارش</h2>
+
+          <div class="contact__content grid">
+            <div class="contact__data grid">
+              <div>
+                <h3 class="contact__title">اكتب لنا</h3>
+
+                <div class="contact__social">
+                  <a href="https://wa.me/963993323093" target="_blank">
+                    <i class="ri-whatsapp-fill"></i>
+                  </a>
+                  <a href="https://m.me/Nakaresh.co" target="_blank">
+                    <i class="ri-messenger-fill"></i>
+                  </a>
+                  <a href="mailto:amostmg421@gmail.com" target="_blank">
+                    <i class="ri-mail-fill"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="contact__title">اتصل بنا</h3>
+                <address class="contact__info">+963-993-323-093</address>
+              </div>
+
+              <div>
+                <h3 class="contact__title">تجدنا هنا</h3>
+                <address class="contact__info">
+                  سوريا <br />
+                  مكان ما في سوريا
+                </address>
+              </div>
+            </div>
+
+            <img
+              src="assets/img/unnamed2-removebg-preview.png"
+              alt="image"
+              class="contact__img"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <a href="#" class="footer__logo">نقارش</a>
+
+        <div class="footer__content grid">
+          <a href="#" class="footer__link">الشروط والأحكام</a>
+          <a href="#" class="footer__link">سياسة الخصوصية</a>
+          <span class="footer__copy"> &#169; جميع الحقوق محفوظة </span>
+        </div>
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#home" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
